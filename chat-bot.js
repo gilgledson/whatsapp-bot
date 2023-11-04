@@ -20,6 +20,10 @@ const replyMessage = async (phone, message) => {
     phone,
     message,
     delayTyping: 3,
+  }, {
+    headers: {
+      "Client-Token": `F1dd875f809cd4236ac5a0aee4bfcfa76S`,
+    },
   });
 };
 
