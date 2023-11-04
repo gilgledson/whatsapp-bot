@@ -2,10 +2,10 @@
   "name": "chat-gpt-z-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "chat-bot.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node chat-bot.js",
+    "dev": "nodemon chat-bot.js"
   },
   "type": "module",
   "author": "",
