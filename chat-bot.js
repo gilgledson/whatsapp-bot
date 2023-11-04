@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 
 
 const initialMessage = "Bem-vindo ao Chat GPT, como posso te ajudar?";
-const secretKey = process.env.OPEN_AI_API_KEY;
-const zapiUrl = `https://api.z-api.io/instances/${process.env.Z_API_INSTANCE_ID}/token/${process.env.Z_API_INSTANCE_TOKEN}/send-text`;
+const secretKey = "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";
+const zapiUrl = `https://api.z-api.io/instances/3C5D1A35BCAE10AFDBD0DAF826B91A31/token/A469740D74848B1B4207C739/send-text`;
 
 const chats = {};
 
