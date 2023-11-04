@@ -1,19 +1,23 @@
 {
-  "name": "example-nodejs",
+  "name": "chat-gpt-z-api",
   "version": "1.0.0",
-  "description": "Z-API - Integre seu sistema ao Whatsapp",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r esm index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "homepage": "https://github.com/Z-API/example-nodejs",
-  "author": "Z-API Team",
+  "type": "module",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
-    "esm": "^3.2.25",
-    "get-audio-duration": "^1.0.0",
-    "inquirer": "^7.0.4",
-    "ora": "^4.0.3"
+    "axios": "^1.2.2",
+    "body-parser": "^1.20.1",
+    "chatgpt": "^3.3.10",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
