@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 
 const initialMessage = "Bem-vindo ao Chat GPT, como posso te ajudar?";
-const secretKey = "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";
+const secretKey = "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";
 const zapiUrl = `https://api.z-api.io/instances/3C5D1A35BCAE10AFDBD0DAF826B91A31/token/A469740D74848B1B4207C739/send-text`;
 
 const chats = {};
@@ -49,7 +49,7 @@ const onNewMessage = async (message) => {
     const response = await axios.post(
       `https://api.openai.com/v1/completions`,
       {
-        model: "text-davinci-003",
+        model: "gpt-3.5-turbo-instruct",
         prompt,
         temperature: 0.9,
         max_tokens: 500,
