@@ -60,7 +60,9 @@
    }
  
    async detectIntent(text, sessionId, payload) {
-     const sessionPath = "4/0AfJohXk-PSQqPqUlSZqX5UnHc2hS7nXF8sf3Ph9rOkQG3bfcxPkpBdKmDJz20hk6EZkpqg";
+    //4/0AfJohXk-PSQqPqUlSZqX5UnHc2hS7nXF8sf3Ph9rOkQG3bfcxPkpBdKmDJz20hk6EZkpqg
+     const sessionPath = this.sessionClient.sessionPath(
+         this.projectId, sessionId);
      const request = this.constructRequest(text, sessionPath, payload);
      return await this.detectIntentHelper(request);
    }
