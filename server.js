@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
  
 // const projectId = 'chat-bot-whatsapp-mgsc';
-const projectId = 'numeric-polygon-404109';
+const projectId = 'chat-bot-whatsapp-mgsc';
 const phoneNumber = "18646631874";
 const accountSid = 'AC7b79983c85fad017ab1c3f6f0138dbce';
 const authToken = '9d797d425c7be2e46f84b584ee894bf8';
