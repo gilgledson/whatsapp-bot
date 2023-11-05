@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const app = express();
 const dialogflowSessionClient =
-    require('../botlib/dialogflow_session_client.js');
+    require('./dialogflow_session_client.js');
 const bodyParser = require('body-parser');
  
 app.use(bodyParser.json());
