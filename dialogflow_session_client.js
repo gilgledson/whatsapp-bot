@@ -31,7 +31,7 @@
        queryInput: {
          text: {
            text: text,
-           languageCode: 'en'
+           languageCode: 'pt-br'
          }
        },
        queryParams: {
@@ -46,7 +46,7 @@
        queryInput: {
          event: {
            name: eventName,
-           languageCode: 'en'
+           languageCode: 'pt-br'
          },
        },
      };
@@ -60,8 +60,7 @@
    }
  
    async detectIntent(text, sessionId, payload) {
-     const sessionPath = this.sessionClient.sessionPath(
-         this.projectId, sessionId);
+     const sessionPath = "4/0AfJohXk-PSQqPqUlSZqX5UnHc2hS7nXF8sf3Ph9rOkQG3bfcxPkpBdKmDJz20hk6EZkpqg";
      const request = this.constructRequest(text, sessionPath, payload);
      return await this.detectIntentHelper(request);
    }
