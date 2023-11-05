@@ -61,8 +61,14 @@
  
    async detectIntent(text, sessionId, payload) {
     //4/0AfJohXk-PSQqPqUlSZqX5UnHc2hS7nXF8sf3Ph9rOkQG3bfcxPkpBdKmDJz20hk6EZkpqg
-     const sessionPath = this.sessionClient.sessionPath(
-         this.projectId, sessionId);
+    //  const sessionPath = this.sessionClient.sessionPath(
+    //      this.projectId, sessionId);
+     const sessionPath = this.sessionClientprojectLocationAgentSessionPath(
+      this.projectId, // update to Project ID
+      "us-central1",
+      "chat-bot", // update to Agent ID
+      sessionId);
+
      const request = this.constructRequest(text, sessionPath, payload);
      return await this.detectIntentHelper(request);
    }
